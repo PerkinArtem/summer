@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative;
+
+    background-color: #FFFFFF;
+    color: #222;
+}
+.video-backround {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: left;
+    z-index: -1;
+}
+.countdown-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.countdown-container > div{
+    margin: 0 30px;
+}
+.numbers {
+    font-size: 80px;
+    text-align: center;
+}
+.numbers-caption {
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    body {
+
+    }
+    .countdown-title {
+        font-size: 16px;
+        letter-spacing: 0.3rem;
+    }
+    .countdown-container > div{
+        margin: 0 20px;
+    }
+    .numbers {
+        font-size: 50px;
+    }
+    .numbers-caption {
+        font-size: 14px;
+    }
+}
+@media (max-width: 414px) {
+    .countdown-title {
+        font-size: 16px;
+        letter-spacing: 0.3rem;
+    }
+    .countdown-container > div{
+        margin: 0 12px;
+    }
+    .numbers {
+        font-size: 36px;
+    }
+    .numbers-caption {
+        font-size: 12px;
+    }
+}
